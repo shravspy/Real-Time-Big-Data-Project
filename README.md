@@ -13,8 +13,8 @@ We are using the following data to analyse .....
 
 # Team Members:
 
-Shreya Pandey 
-Sajan Bang
+  01. Shreya Pandey 
+  02. Sajan Bang
 
 # Folders and process to run ...
 
