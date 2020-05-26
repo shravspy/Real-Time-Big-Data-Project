@@ -9,8 +9,8 @@ from nltk.tokenize import word_tokenize
 from textblob import TextBlob 
 
 def removing_stop_words():
-	file = open("/Users/shravspy/Documents/RBDA/Assignments/Project/Analytics/Analytics_code/output_MR.txt", "r")
-	output_file = open("/Users/shravspy/Documents/RBDA/Assignments/Project/Analytics/Analytics_code/output_sw.txt", "w")
+	file = open("/location/output_MR.txt", "r")
+	output_file = open("/location/output_sw.txt", "w")
 	stop_words = set(stopwords.words('english'))
 	word_tokens=[]
 
@@ -42,8 +42,8 @@ def sentiment_analysis():
 	counter_positive=0
 	counter_neutral=0
 	counter_negative=0
-	file = open("/Users/shravspy/Documents/RBDA/Assignments/Project/Analytics/Analytics_code/output_sw.txt", "r")
-	output_file = open("/Users/shravspy/Documents/RBDA/Assignments/Project/Analytics/Analytics_code/output_pnn.txt", "w")
+	file = open("/location/output_sw.txt", "r")
+	output_file = open("/location/output_pnn.txt", "w")
 	for line in file:
 		line=line.split(',')
 		sentence=line[1].split(":")
